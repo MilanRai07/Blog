@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components{
+  .navActive{
+    @apply bg-active p-7 lg:p-5 mlg:p-3 md:hidden;
+  }
+}
