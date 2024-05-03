@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/Home/HomePage';
 
 const App = () => {
   return (
