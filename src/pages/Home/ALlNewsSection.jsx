@@ -15,7 +15,7 @@ const ALlNewsSection = () => {
               <div key={id} className={`w-full shadow-2xl rounded-lg overflow-hidden relative
               ${id === 0 ? ' col-span-2 row-span-2 h-homeImg' : 'h-52 sm:h-44'}`}
               >
-                <img src={img} className='h-full w-full imgScale cursor-pointer '></img>
+                <img src={img} className='imgCustom cursor-pointer '></img>
                 <div className={`absolute bottom-8 text-white font-bold  bg-textBg w-full ${id === 0 ? 'p-5 text-xl md:text-lg' : 'p-1.5 md:text-sm xs:text-customSize xs:leading-customLineHeight'}`}>
                   <h2>{title.slice(0, 85)}</h2>
                 </div>

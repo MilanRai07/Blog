@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { ReactComponent as Left } from '../../assets/left.svg';
 import { ReactComponent as Right } from '../../assets/right.svg';
 import Card1 from '../../components/Card1';
-import useFilterPopular from '../../customHook/useFilterPopular';
+import usePopularData from '../../customHook/usePopularData';
 import useGetData from '../../customHook/useGetData';
 
 const Popular = () => {
    let allData = useGetData();
-   let filterData = useFilterPopular(allData);
+   let filterData = usePopularData(allData);
    const [popularData, setPopularData] = useState(filterData);
 
    const slideLeft = () => {
@@ -20,8 +20,8 @@ const Popular = () => {
    }
    return (
       <>
-         <section className='mt-16 text-center' >
-            <h1 className='text-2xl text-white rounded-lg bg-customGreen-100 inline p-2  '>Popular News</h1>
+         <section className='section' >
+            <h1 className='sectionHeader bg-customGreen-100 '>Popular News</h1>
             <div className=' bg-sliderBg mt-14 rounded-md'>
                <div className='flex justify-between p-7'>
                   <Left className="slideArrow" onClick={slideLeft} />

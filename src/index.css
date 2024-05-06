@@ -6,6 +6,15 @@
   .navActive{
     @apply bg-active p-7 lg:p-5 mlg:p-3 md:hidden;
   }
+  .section{
+    @apply mt-20 text-center
+  }
+  .sectionHeader{
+    @apply text-2xl text-white rounded-lg inline p-2 
+  }
+  .imgCustom{
+    @apply h-full w-full imgScale object-cover
+  }
   .imgScale{
     @apply hover:scale-110 transition-all
   }
@@ -16,6 +25,6 @@
     @apply text-xs p-1 text-white rounded-sm
   }
   .button1{
-    @apply mt-4 bg-customGreen-100 p-2 text-sm text-white rounded-md hover:bg-customGreen-200 
+    @apply w-32 bg-customGreen-100 p-2 text-sm text-white rounded-md hover:bg-customGreen-200 
   }
 }

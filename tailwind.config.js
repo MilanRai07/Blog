@@ -20,7 +20,10 @@ export default {
         },
         'active': '#107869',
         'textBg': 'rgba(0, 0, 0, 0.7)',
-        'sliderBg': '#a3dbcc'
+        'sliderBg': '#a3dbcc',
+        'footballBg': '#1a7489',
+        'basketBallBg': '#c85bab',
+        'ufcBg': 'rgb(200, 77, 77)'
       },
       animation: {
         rotateSlow: 'rotateSlow 2s linear infinite',
@@ -35,6 +38,17 @@ export default {
       height: {
         'homeImg': '432px !important'
       },
+      width: {
+        'fc': '55rem',
+        'fcDetail': '40rem'
+      },
+      maxWidth: {
+        'fc': '55rem',
+        'fcDetail': '40rem'
+      },
+      boxShadow: {
+        'customShadow': '5px 5px 10px 5px #ccb3b3'
+      }
     },
     screens: {
       '2xl': { 'max': '1535px' }, // => @media (max-width: 1535px) { ... }
@@ -42,6 +56,7 @@ export default {
       'lg': { 'max': '1045px' }, // => @media (max-width: 1045px) { ... }
       'mlg': { 'max': '855px' },
       'md': { 'max': '767px' }, // => @media (max-width: 767px) { ... }
+      'm-d': { 'max': '731px' },
       'sm': { 'max': '639px' }, // => @media (max-width: 639px) { ... }
       'xs': { 'max': '435px' }
     }
