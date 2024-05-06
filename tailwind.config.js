@@ -13,9 +13,14 @@ export default {
         'customLineHeight': '0.7rem'
       },
       backgroundColor: {
-        'customGreen': '#0D8F4F',
+        customGreen: {
+          100: '#0D8F4F',
+          200: '#0d7340'
+
+        },
         'active': '#107869',
-        'textBg': 'rgba(0, 0, 0, 0.7)'
+        'textBg': 'rgba(0, 0, 0, 0.7)',
+        'sliderBg': '#a3dbcc'
       },
       animation: {
         rotateSlow: 'rotateSlow 2s linear infinite',

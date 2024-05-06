@@ -19,7 +19,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className='bg-customGreen w-full h-20 flex items-center justify-between px-10 text-white font-bold '>
+            <nav className='bg-customGreen-100 w-full h-20 flex items-center justify-between px-10 text-white font-bold '>
                 <div className='flex items-center gap-5' >
                     <Ball className="animate-rotateSlow" />
                     <h1 className='text-xl md:text-lg'>Sport News</h1>
