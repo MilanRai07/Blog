@@ -36,7 +36,8 @@ export default {
         }
       },
       height: {
-        'homeImg': '432px !important'
+        'homeImg': '432px !important',
+        'topImg': '527px'
       },
       width: {
         'fc': '55rem',

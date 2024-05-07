@@ -27,4 +27,7 @@
   .button1{
     @apply w-32 bg-customGreen-100 p-2 text-sm text-white rounded-md hover:bg-customGreen-200 
   }
+  .positionSmooth{
+    @apply duration-700 ease-in-out
+  }
 }
