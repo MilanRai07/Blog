@@ -11,8 +11,8 @@ const HomePage = () => {
     <div className='px-10 mt-3'>
       <ALlNewsSection />
       <Popular />
-      <FootballSection/>
-      <Others/>
+      <FootballSection />
+      <Others />
     </div>
   )
 }
