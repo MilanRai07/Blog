@@ -49,6 +49,9 @@ export default {
       },
       boxShadow: {
         'customShadow': '5px 5px 10px 5px #ccb3b3'
+      },
+      scale:{
+        'customScale':'1.01'
       }
     },
     screens: {

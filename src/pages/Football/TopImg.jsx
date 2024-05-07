@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import useGetData from '../../customHook/useGetData';
+import React from 'react'
 import ImgSlider from '../../components/ImgSlider';
 
-const TopImg = () => {
-    let Data = useGetData();
-    const [topData, setTopData] = useState(Data.slice(0, 3));
+const TopImg = (props) => {
+    const { topData } = props;
     return (
         <>
             <ImgSlider topData={topData} />
