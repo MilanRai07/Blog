@@ -25,9 +25,21 @@
     @apply text-xs p-1 text-white rounded-sm
   }
   .button1{
-    @apply w-32 bg-customGreen-100 p-2 text-sm text-white rounded-md hover:bg-customGreen-200 
+    @apply w-32 m-d:w-24  bg-customGreen-100 p-2 text-sm m-d:text-xs cursor-pointer text-white rounded-md hover:bg-customGreen-200 
   }
   .positionSmooth{
     @apply duration-700 ease-in-out
+  }
+  .flexCenter{
+    @apply flex items-center justify-center;
+  }
+  .loginSignUp{
+    @apply flexCenter bg-gray-700 w-full h-full text-lg m-d:text-base xs:text-sm font-bold cursor-pointer hover:bg-customGreen-300 transition duration-1000 ease-in-out;
+  }
+  .loginSignUpInfo{
+    @apply mt-5 font-bold text-green-700 m-d:text-sm xs:text-xs
+  }
+  .inputField{
+    @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
   }
 }

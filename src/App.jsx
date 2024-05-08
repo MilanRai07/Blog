@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import FootballPage from './pages/Football/FootballPage';
 import UFCPage from './pages/UFC/UFCPage';
 import BasketBallPage from './pages/BasketBall/BasketBallPage';
+import BeMember from './pages/BeMember/BeMember';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/football' element={<FootballPage />} />
           <Route path='/ufc' element={<UFCPage />} />
           <Route path='/basketball' element={<BasketBallPage />} />
+          <Route path='/beamember' element={<BeMember/>}/>
         </Route>
       </Routes>
       <Footer />
