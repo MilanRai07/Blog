@@ -42,4 +42,7 @@
   .inputField{
     @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
   }
+  .footerSVG{
+    @apply hover:cursor-pointer hover:scale-105
+  }
 }

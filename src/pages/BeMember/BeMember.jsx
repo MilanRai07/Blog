@@ -12,7 +12,7 @@ const BeMember = () => {
     }
     return (
         <>
-            <div className='flexCenter h-screen bg-myImg  bg-cover'>
+            <div className='flexCenter h-screen bg-myImg  bg-cover -mb-20'>
                 <div className='min-h-formHeight bg-darkTransparent w-fcDetail rounded-md p-12 m-d:p-10 m-d:w-formMW xs:w-64'>
                     <div className='flexCenter text-white rounded-md overflow-hidden h-10 xs:h-6'>
                         <div className={`loginSignUp ${active ? 'bg-customGreen-300' : ''}`} onClick={signUp} >
