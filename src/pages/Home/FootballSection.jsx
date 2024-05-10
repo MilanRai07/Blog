@@ -17,7 +17,7 @@ const FootballSection = () => {
                     <div className='flex flex-col gap-5'>
                         {
                             footballData.map((item, index) => {
-                                const { id, title, date, news, img } = item;
+                                const { id, title, date, news, img, sport } = item;
                                 return (
                                     <div key={index}>
                                         <Card2
@@ -26,6 +26,7 @@ const FootballSection = () => {
                                             date={date}
                                             news={news}
                                             img={img}
+                                            sport={sport}
                                         />
                                     </div>
                                 )

@@ -10,7 +10,7 @@
     @apply mt-20 text-center
   }
   .sectionHeader{
-    @apply text-2xl text-white rounded-lg inline p-2 
+    @apply text-2xl text-white rounded-lg inline p-2 lg:text-xl md:text-base sm-d:text-sm
   }
   .imgCustom{
     @apply h-full w-full imgScale object-cover
@@ -40,9 +40,21 @@
     @apply mt-5 font-bold text-green-700 m-d:text-sm xs:text-xs
   }
   .inputField{
-    @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
+    @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 border-slate-400 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
   }
   .footerSVG{
     @apply hover:cursor-pointer hover:scale-105
+  }
+  .shareBtnDiv{
+    @apply flexCenter rounded-md max-w-32 w-full sm:text-xs xs:flex-col xs:text-customSize text-white cursor-pointer hover:brightness-75;
+  }
+  .connectBtn{
+    @apply flexCenter text-base lg:text-sm h-14 md:h-10 sm:text-xs rounded-md w-full text-white cursor-pointer hover:brightness-75;
+  }
+  .small{
+    @apply scale-50
+  }
+  .medium{
+    @apply scale-75
   }
 }
