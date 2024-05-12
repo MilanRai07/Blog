@@ -19,9 +19,7 @@ const SignUp = () => {
     const [signed, setSigned] = useState(false);
 
     const onSubmit = (values, onSubmitProps) => {
-        console.log('submit')
         console.log('formValues', values)
-        console.log(onSubmitProps)
         setTimeout(() => {
             onSubmitProps.setSubmitting(false);
             onSubmitProps.resetForm();

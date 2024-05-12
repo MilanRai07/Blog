@@ -1,19 +1,17 @@
-import { Form, Formik } from 'formik';
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import React from 'react'
-import Controller from '../../components/Form/FormikController/Controller';
+import React from 'react';
 
-let initialValues = {
-    email: ''
+const initialValues = {
+    email: '',
 }
+const validationSchema = Yup.object({
+    email: Yup.string().email('invalid email').required('email is required'),
+})
 const Subscribe = () => {
-    const validationSchema = Yup.object({
-        email: Yup.string().email('invalid email').required('email is required')
-    })
+
     const onSubmit = (values, onSubmitProps) => {
-        console.log('submit')
-        console.log('formValues', values)
-        console.log(onSubmitProps)
+        console.log(values);
         setTimeout(() => {
             onSubmitProps.setSubmitting(false);
             onSubmitProps.resetForm();
@@ -26,21 +24,23 @@ const Subscribe = () => {
                 <div className='h-52 shadow-customShadow mt-16 md:mt-10 flexCenter text-center rounded-md'>
                     <Formik
                         initialValues={initialValues}
-                        validationSchema={validationSchema}
                         onSubmit={onSubmit}
+                        validationSchema={validationSchema}
                     >
                         {
                             (formik) => (
-                                <Form>
-                                    <input
+
+                                <Form className='text-sm text-lime-800'>
+                                    <Field
                                         type='email'
                                         placeholder='email'
                                         name='email'
                                         className='inputField xl:w-64 lg:w-4/5 sm-d:w-60 xs:w-40'
                                     >
-                                    </input>
+                                    </Field><br></br>
+                                    <ErrorMessage name='email' />
                                     <div className='text-center mt-5'>
-                                        <button className='button1' type='submit' disabled={!formik.isValid || formik.isSubmitting}>
+                                        <button className='button1' type='submit' disabled={!formik.isValid || formik.isSubmitting} >
                                             {
                                                 formik.isSubmitting ? 'Submitting' : 'Subscribe'
                                             }
