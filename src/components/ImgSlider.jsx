@@ -59,8 +59,8 @@ const ImgSlider = (props) => {
                                     <img src={img} className='h-full w-full brightness-50 object-cover' />
                                     <Left className='z-10 absolute top-1/2 left-10 cursor-pointer xs:size-10 xs:left-5' onClick={left} />
                                     <Right className='z-10 absolute top-1/2 right-10 cursor-pointer xs:size-10 xs:right-5' onClick={right} />
-                                    <h1 id='title' className='absolute top-1/3 mlg:top-1/4 left-52 sm:left-28 xs:left-16 xs:w-40 text-white dark:textDark text-2xl mlg:text-xl sm:text-base xs:text-sm bg-textBg p-3 xs:p-2 rounded-md positionSmooth'>{title.slice(0, 50) + '...'}</h1>
-                                    <p id="date" className='absolute top-1/2 mlg:top-52 left-52 sm:left-28 xs:left-16 text-sm mlg:text-xs text-white dark:textDark bg-active p-1 rounded-md positionSmooth'>{date}</p>
+                                    <h1 id='title' className='absolute top-1/3 mlg:top-1/4 left-52 md:left-44 md:w-72 sm:left-28 xs:left-16 xs:w-60 text-white dark:textDark text-2xl mlg:text-xl sm:text-base xs:text-sm bg-textBg p-3 xs:p-2  rounded-md positionSmooth'>{title.slice(0, 50) + '...'}</h1>
+                                    <p id="date" className='absolute top-1/2 mlg:top-52 left-52 md:left-44 md:top-55 sm:left-28 xs:left-16 text-sm mlg:text-xs text-white dark:textDark bg-active p-1 rounded-md positionSmooth'>{date}</p>
                                     <p id='news' className='absolute bottom-1/4 left-52 sm:left-28 sm:top-1/2 right-52 text-white dark:textDark text-md mlg:text-sm sm:text-xs positionSmooth xs:hidden'>{`${news.slice(0, 200)}...`}</p>
                                     <button id='btn' className='absolute bottom-10 left-52 sm:left-28 sm:p-1 button1 positionSmooth xs:text-customSize xs:padding-0.5'
                                         onClick={() => Navigation(sport, id)}>
