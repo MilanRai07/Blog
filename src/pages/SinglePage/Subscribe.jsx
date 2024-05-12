@@ -42,7 +42,7 @@ const Subscribe = () => {
                                     <div className='text-center mt-5'>
                                         <button className='button1' type='submit' disabled={!formik.isValid || formik.isSubmitting} >
                                             {
-                                                formik.isSubmitting ? 'Submitting' : 'Subscribe'
+                                                formik.isSubmitting ? 'Subscribing' : 'Subscribe'
                                             }
                                         </button>
                                     </div>

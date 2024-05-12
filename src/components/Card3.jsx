@@ -1,7 +1,9 @@
 import React from 'react'
+import useNewsNavigate from '../customHook/useNewsNavigate';
 
 const Card3 = (props) => {
-    const { img, id, date, title, news } = props;
+    const { img, id, date, title, news, sport } = props;
+    const { Navigation } = useNewsNavigate();
 
     return (
         <>
@@ -19,7 +21,7 @@ const Card3 = (props) => {
                     <div>
                         <p className='text-sm sm:text-xs'>{`${news.slice(0, 50)}...`}</p>
                     </div>
-                    <button className='button1 mt-4'>Read More</button>
+                    <button className='button1 mt-4' onClick={() => Navigation(sport, id)}>Read More</button>
                 </div>
             </div>
         </>

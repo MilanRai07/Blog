@@ -1,8 +1,10 @@
 import React from 'react'
 import useColorFilter from '../customHook/useColorFilter';
+import useNewsNavigate from '../customHook/useNewsNavigate';
 
 const Card1 = (props) => {
     const { img, id, date, sport, title } = props;
+    const { Navigation } = useNewsNavigate();
 
     return (
         <>
@@ -18,7 +20,9 @@ const Card1 = (props) => {
                     <div className='mt-4 p-1 h-14 md:h-12'>
                         <h2 className=' font-bold md:text-sm'>{`${title.length < 45 ? title : title.slice(0, 45) + '...'}`} </h2>
                     </div>
-                    <button className='button1 mt-4'>Read More</button>
+                    <button className='button1 mt-4' onClick={() => Navigation(sport, id)}>
+                        Read More
+                    </button>
                 </div>
             </div>
         </>

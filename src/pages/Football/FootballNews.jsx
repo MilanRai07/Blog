@@ -10,7 +10,7 @@ const FootballNews = (props) => {
                 <div className='mt-14 flex w-full flex-wrap gap-9 justify-center' >
                     {
                         otherNews.map((item, index) => {
-                            const { id, news, title, img, date } = item;
+                            const { id, news, title, img, date, sport } = item;
                             return (
                                 <div key={index}>
                                     <Card3
@@ -19,6 +19,7 @@ const FootballNews = (props) => {
                                         title={title}
                                         img={img}
                                         date={date}
+                                        sport={sport}
                                     />
                                 </div>
                             )

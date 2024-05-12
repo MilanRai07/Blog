@@ -15,12 +15,15 @@ const App = () => {
       <Routes>
         <Route path='/' element={<NavBar />}>
           <Route index element={<HomePage />} />
-          <Route path='/football' element={<FootballPage />} />
-          <Route path='/ufc' element={<UFCPage />} />
-          <Route path='/basketball' element={<BasketBallPage />} />
-          <Route path='/beamember' element={<BeMember/>}/>
-          <Route path='/aboutus' element={<SinglePage/>}/>
-          <Route path='/singlepage/:sport/:key' element={<SinglePage/>}/>
+          <Route path='football' element={<FootballPage />} />
+          <Route path='ufc' element={<UFCPage />} />
+          <Route path='basketball' element={<BasketBallPage />} />
+          <Route path='beamember' element={<BeMember />} />
+          <Route path='aboutus' element={<SinglePage />} />
+          <Route path='singlepage/:sport/:key' element={<SinglePage />} />
+          <Route path='football/singlepage/:sport/:key' element={<SinglePage />} />
+          <Route path='basketball/singlepage/:sport/:key' element={<SinglePage />} />
+          <Route path='ufc/singlepage/:sport/:key' element={<SinglePage />} />
         </Route>
       </Routes>
       <Footer />

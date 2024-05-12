@@ -1,10 +1,12 @@
 import React from 'react'
 import useGetData from '../../customHook/useGetData';
 import useColorFilter from '../../customHook/useColorFilter';
+import useNewsNavigate from '../../customHook/useNewsNavigate';
 
 const ALlNewsSection = () => {
   const data = useGetData();
   let newData = data.slice(0, 9);
+  const { Navigation } = useNewsNavigate();
   return (
     <>
       <div className='grid grid-cols-3 gap-5 sm:grid-cols-2 m-auto'>
@@ -14,6 +16,7 @@ const ALlNewsSection = () => {
             return (
               <div key={id} className={`w-full shadow-2xl rounded-lg overflow-hidden relative
               ${id === 0 ? ' col-span-2 row-span-2 h-homeImg' : 'h-52 sm:h-44'}`}
+                onClick={() => Navigation(sport, id)}
               >
                 <img src={img} className='imgCustom cursor-pointer '></img>
                 <div className={`absolute bottom-8 text-white font-bold  bg-textBg w-full ${id === 0 ? 'p-5 text-xl md:text-lg' : 'p-1.5 md:text-sm xs:text-customSize xs:leading-customLineHeight'}`}>

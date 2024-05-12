@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { ReactComponent as Left } from '../assets/left.svg';
 import { ReactComponent as Right } from '../assets/right.svg';
+import useNewsNavigate from '../customHook/useNewsNavigate';
 
 const ImgSlider = (props) => {
     const { topData } = props;
     const [currentImg, setCurrentImg] = useState(0);
+    const { Navigation } = useNewsNavigate();
 
     useEffect(() => {
         let changeImg = setTimeout(() => {
@@ -48,7 +50,7 @@ const ImgSlider = (props) => {
         <>
             {
                 topData.map((item, index) => {
-                    const { id, img, title, news, date } = item;
+                    const { id, img, title, news, date, sport } = item;
                     return (
                         <div key={index} className={index == currentImg ? 'opacity-100 duration-1000' : 'opacity-70 duration-1000'}>
                             {
@@ -60,7 +62,10 @@ const ImgSlider = (props) => {
                                     <h1 id='title' className='absolute top-1/3 mlg:top-1/4 left-52 sm:left-28 xs:left-16 xs:w-40 text-white text-2xl mlg:text-xl sm:text-base xs:text-sm bg-textBg p-3 xs:p-2 rounded-md positionSmooth'>{title}</h1>
                                     <p id="date" className='absolute top-1/2 mlg:top-52 left-52 sm:left-28 xs:left-16 text-sm mlg:text-xs text-white bg-active p-1 rounded-md positionSmooth'>{date}</p>
                                     <p id='news' className='absolute bottom-1/4 left-52 sm:left-28 sm:top-1/2 right-52 text-white text-md mlg:text-sm sm:text-xs positionSmooth xs:hidden'>{`${news.slice(0, 200)}...`}</p>
-                                    <button id='btn' className='absolute bottom-10 left-52 sm:left-28 sm:p-1 button1 positionSmooth xs:text-customSize xs:padding-0.5'>Read More</button>
+                                    <button id='btn' className='absolute bottom-10 left-52 sm:left-28 sm:p-1 button1 positionSmooth xs:text-customSize xs:padding-0.5'
+                                        onClick={() => Navigation(sport, id)}>
+                                        Read More
+                                    </button>
                                 </div>
                             }
                         </div>
