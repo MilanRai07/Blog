@@ -10,7 +10,7 @@
     @apply mt-20 text-center
   }
   .sectionHeader{
-    @apply text-2xl text-white rounded-lg inline p-2 lg:text-xl md:text-base sm-d:text-sm
+    @apply text-2xl text-white rounded-lg inline p-2 lg:text-xl md:text-base sm-d:text-sm dark:textDark
   }
   .imgCustom{
     @apply h-full w-full imgScale object-cover
@@ -22,10 +22,10 @@
     @apply cursor-pointer hover:brightness-75;
   }
   .cardDateSport{
-    @apply text-xs p-1 text-white rounded-sm
+    @apply text-xs p-1 text-white rounded-sm dark:textDark
   }
   .button1{
-    @apply w-32 m-d:w-24  bg-customGreen-100 p-2 text-sm m-d:text-xs cursor-pointer text-white rounded-md hover:bg-customGreen-200 
+    @apply w-32 m-d:w-24  bg-customGreen-100 p-2 text-sm m-d:text-xs cursor-pointer text-white dark:text-stone-200 rounded-md hover:bg-customGreen-200 
   }
   .positionSmooth{
     @apply duration-700 ease-in-out
@@ -40,7 +40,7 @@
     @apply mt-5 font-bold text-green-700 m-d:text-sm xs:text-xs
   }
   .inputField{
-    @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 border-slate-400 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
+    @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 dark:bgDark dark:textDark border-slate-400 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
   }
   .footerSVG{
     @apply hover:cursor-pointer hover:scale-105 xs:scale-50;
@@ -56,5 +56,11 @@
   }
   .medium{
     @apply scale-75
+  }
+  .textDark{
+    @apply text-stone-200
+  }
+  .bgDark{
+    @apply bg-stone-800
   }
 }

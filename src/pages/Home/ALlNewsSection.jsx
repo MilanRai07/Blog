@@ -19,7 +19,7 @@ const ALlNewsSection = () => {
                 onClick={() => Navigation(sport, id)}
               >
                 <img src={img} className='imgCustom cursor-pointer '></img>
-                <div className={`absolute bottom-8 text-white font-bold  bg-textBg w-full ${id === 0 ? 'p-5 text-xl md:text-lg' : 'p-1.5 md:text-sm xs:text-customSize xs:leading-customLineHeight'}`}>
+                <div className={`absolute bottom-8 text-white dark:textDark font-bold  bg-textBg w-full ${id === 0 ? 'p-5 text-xl md:text-lg' : 'p-1.5 md:text-sm xs:text-customSize xs:leading-customLineHeight'}`}>
                   <h2>{title.slice(0, 85)}</h2>
                 </div>
                 <p className={`absolute top-8 right-5 md:right-2 xs:right-1 text-white bg-customGreen-100 p-1 rounded-md ${id === 0 ? 'text-base md:text-sm' : 'text-xs md:p-0.5 xs:text-customSize'}`}>

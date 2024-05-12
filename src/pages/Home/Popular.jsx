@@ -22,7 +22,7 @@ const Popular = () => {
       <>
          <section className='section' >
             <h1 className='sectionHeader bg-customGreen-100 '>Popular News</h1>
-            <div className=' bg-sliderBg mt-14 rounded-md'>
+            <div className=' bg-sliderBg mt-14 rounded-md dark:bg-stone-800'>
                <div className='flex justify-between p-7'>
                   <Left className="slideArrow" onClick={slideLeft} />
                   <Right className="slideArrow" onClick={slideRight} />

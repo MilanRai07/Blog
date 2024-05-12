@@ -8,6 +8,7 @@ import UFCPage from './pages/UFC/UFCPage';
 import BasketBallPage from './pages/BasketBall/BasketBallPage';
 import BeMember from './pages/BeMember/BeMember';
 import SinglePage from './pages/SinglePage/SinglePage';
+import ErrorPage from './pages/Error/ErrorPage';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='football/singlepage/:sport/:key' element={<SinglePage />} />
           <Route path='basketball/singlepage/:sport/:key' element={<SinglePage />} />
           <Route path='ufc/singlepage/:sport/:key' element={<SinglePage />} />
+          <Route path='*' element={<ErrorPage />} />
         </Route>
       </Routes>
       <Footer />

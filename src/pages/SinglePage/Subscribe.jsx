@@ -21,7 +21,7 @@ const Subscribe = () => {
         <>
             <section className='mt-20 m-d:mt-5 m-d:w-full m-d:text-center'>
                 <h1 className='sectionHeader bg-customGreen-200'>Subscribe</h1>
-                <div className='h-52 shadow-customShadow mt-16 md:mt-10 flexCenter text-center rounded-md'>
+                <div className='h-52 shadow-customShadow dark:shadow-none mt-16 md:mt-10 flexCenter text-center rounded-md dark:bgDark'>
                     <Formik
                         initialValues={initialValues}
                         onSubmit={onSubmit}

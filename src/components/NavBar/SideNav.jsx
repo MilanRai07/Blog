@@ -7,7 +7,6 @@ const SideNav = () => {
         { name: 'UFC', path: 'ufc', img: '/navBarImg/ufcring.jpg' },
         { name: 'BasketBall', path: 'basketball', img: '/navBarImg/basketballs.jpg' },
         { name: 'Be a member', path: 'beamember', img: '/navBarImg/member.jpg' },
-        { name: 'About us', path: '/aboutus', img: '/navBarImg/aboutus.jpg' }
     ])
     return (
         <>
@@ -20,7 +19,7 @@ const SideNav = () => {
                                 <NavLink to={path}>
                                     <div className='h-20 w-full relative cursor-pointer hover:scale-105 transition-all duration-2000 ease-in-out'>
                                         <img src={img} className='w-full h-full object-cover rounded-lg brightness-50 '></img>
-                                        <p className='text-lg lg:text-base text-white absolute top-1/3 inset-x-0'>{name}</p>
+                                        <p className='text-lg lg:text-base dark:textDark text-white absolute top-1/3 inset-x-0'>{name}</p>
                                     </div>
                                 </NavLink>
                             </div>

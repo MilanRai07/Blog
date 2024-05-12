@@ -12,7 +12,7 @@ const FootballSection = () => {
     return (
         <>
             <section className='section'>
-                <h1 className='sectionHeader bg-footballBg'>Football News</h1>
+                <h1 className='sectionHeader bg-footballBg '>Football News</h1>
                 <div className='mt-14 w-full flex justify-between m-d:flex-col gap-6'>
                     <div className='flex flex-col gap-5'>
                         {

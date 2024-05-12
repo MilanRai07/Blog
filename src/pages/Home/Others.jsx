@@ -18,7 +18,7 @@ const Others = () => {
           others.map((item, index) => {
             const { id, sport, title, date, img } = item;
             return (
-              <div key={index} className='shadow-customShadow rounded-md'>
+              <div key={index} className='shadow-customShadow rounded-md dark:shadow-none'>
                 <Card1
                   id={id}
                   title={title}

@@ -3,6 +3,7 @@ import { ReactComponent as Ball } from '../../assets/ball.svg';
 import { ReactComponent as Ham } from '../../assets/ham.svg';
 import { NavLink, Outlet } from 'react-router-dom';
 import DropDown from './DropDown';
+import DarkMode from '../../layouts/DarkMode';
 const NavBar = () => {
     const [showDropDown, setShowDropDown] = useState(false); //to toggle the hamburger dropdown menu
     const [NavList, setNavList] = useState([   //array object to map for list
@@ -11,7 +12,6 @@ const NavBar = () => {
         { name: 'UFC', path: 'ufc' },
         { name: 'BasketBall', path: 'basketball' },
         { name: 'Be a member', path: 'beamember' },
-        { name: 'About us', path: '/aboutus' }
     ])
     const toggleMenu = () => {  //toggle dropdown function
         setShowDropDown(!showDropDown)
@@ -41,12 +41,14 @@ const NavBar = () => {
                         <Ham />
                     </li>
                 </ul>
+               <DarkMode/>
             </nav>
             {showDropDown ?
                 <DropDown navList={NavList} toggleMenu={toggleMenu} /> //pass props to child
                 :
                 ''
             }
+           
             <Outlet />
         </>
     )
