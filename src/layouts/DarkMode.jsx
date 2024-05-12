@@ -23,7 +23,7 @@ const DarkMode = () => {
         <div onClick={changeTheme} className='cursor-pointer hover:scale-105'>
             {
                 theme === 'light' ?
-                    <Moon /> : <Sun />
+                    <Moon className='sm:scale-75' /> : <Sun className='scale-75' />
             }
         </div>
     )
