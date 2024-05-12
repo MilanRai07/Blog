@@ -12,10 +12,10 @@ const Footer = () => {
         <div className='flex flex-col items-center w-80 gap-5 '>
           <Ball className="animate-rotateSlow" />
           <h1 className='text-white font-bold text-xl'>Sport News</h1>
-          <p className='text-white font-semibold text-base text-center'>This is a blog template. It is simply made with React Js and Tailwind CSS.
+          <p className='text-white font-semibold text-base text-center xs:text-xs '>This is a blog template. It is simply made with React Js and Tailwind CSS.
             It gives news about various sports
           </p>
-          <div className='flex gap-5 '>
+          <div className='flex gap-5 xs:gap-2'>
             <Facebook className="footerSVG" />
             <Instagram className="footerSVG" />
             <Linkedin className="footerSVG" />

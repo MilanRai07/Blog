@@ -43,7 +43,7 @@
     @apply p-2.5 rounded-md text-sm m-d:text-xs w-80 m-d:w-64 xs:w-48 xs:h-8 border-2 border-slate-400 focus:outline-none focus:border-green-700 focus:invalid:border-red-600 invalid:text-red-600
   }
   .footerSVG{
-    @apply hover:cursor-pointer hover:scale-105
+    @apply hover:cursor-pointer hover:scale-105 xs:scale-50;
   }
   .shareBtnDiv{
     @apply flexCenter rounded-md max-w-32 w-full sm:text-xs xs:flex-col xs:text-customSize text-white cursor-pointer hover:brightness-75;
