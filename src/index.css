@@ -63,4 +63,7 @@
   .bgDark{
     @apply bg-stone-800
   }
+  .spinner{
+    @apply shadow-spinner h-20 w-20 rounded-full animate-spin
+  }
 }

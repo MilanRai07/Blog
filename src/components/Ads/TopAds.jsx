@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ads from '/Banner.png';
 
 const TopAds = () => {
     return (
         <>
             <section className='flexCenter'>
-                <img src='/Banner.png' alt='advertisement'></img>
+                <img src={ads} alt='advertisement'></img>
             </section>
         </>
     )

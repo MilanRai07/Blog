@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-
+import soccer from '/navBarImg/soccer.jpg';
+import ufc from '/navBarImg/ufcring.jpg';
+import basketball from '/navBarImg/basketballs.jpg'
+import member from '/navBarImg/member.jpg'
 const SideNav = () => {
     const [list, setList] = useState([
-        { name: 'Football', path: '/football', img: '/navBarImg/soccer.jpg' },
-        { name: 'UFC', path: 'ufc', img: '/navBarImg/ufcring.jpg' },
-        { name: 'BasketBall', path: 'basketball', img: '/navBarImg/basketballs.jpg' },
-        { name: 'Be a member', path: 'beamember', img: '/navBarImg/member.jpg' },
+        { name: 'Football', path: '/football', img: soccer },
+        { name: 'UFC', path: 'ufc', img: ufc },
+        { name: 'BasketBall', path: 'basketball', img: basketball },
+        { name: 'Be a member', path: 'beamember', img: member },
     ])
     return (
         <>

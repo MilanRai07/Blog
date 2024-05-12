@@ -6,7 +6,8 @@ import svgr from '@svgr/rollup';
 export default defineConfig({
   base: '/Blog/',
   plugins: [react(), svgr(),
-  reactRefresh(),
-  VitePWA(),
-  ghPages()],
+  ],
+  build: {
+    chunkSizeWarningLimit: 1000
+},
 })

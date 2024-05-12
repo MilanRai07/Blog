@@ -1,7 +1,43 @@
+import ronaldo from '/newsimg/ronaldo.webp';
+import image1 from '/newsimg/paolo banchero.jpg';
+import image2 from '/newsimg/northernireland.jpg';
+import image3 from '/newsimg/khabib.jpg';
+import image4 from '/newsimg/rm.jpg';
+import image5 from '/newsimg/julianna pena.jpg';
+import image6 from '/newsimg/jhonwalls.jpg';
+import image7 from '/newsimg/andreasperriera.jpg';
+import image8 from '/newsimg/rafael fiziev.jpg';
+import image9 from "/newsimg/ellenwhite.jpg";
+import image10 from "/newsimg/tari.jpg";
+import image11 from "/newsimg/GVT.jpg";
+import image12 from "/newsimg/rafael dos.jpeg";
+import image13 from "/newsimg/omarbayern.jpg";
+import image14 from "/newsimg/how_big_is_ufc_cage_f.jpg";
+import image15 from "/newsimg/laliard.jpg";
+import image16 from "/newsimg/jalin turner.jpg";
+import image17 from "/newsimg/shaedonsharpe.jpg";
+import image18 from "/newsimg/cvk.jpg";
+import image19 from "/newsimg/kelseyploum.jpg";
+import image20 from "/newsimg/netherlandvandvnedall.jpg";
+import image21 from "/newsimg/rafael fiziev.jpg";
+import image22 from "/newsimg/newscastle.jpg";
+import image23 from "/newsimg/englandeueo.jpg";
+import image24 from "/newsimg/quentin.jpg";
+import image25 from "/newsimg/Taj-Gibson-e1570840103825.jpg";
+import image26 from "/newsimg/englandwomen.jpg";
+import image27 from "/newsimg/Chris.jpg";
+import image28 from "/newsimg/carla-esparza-2022.jpg";
+import image29 from "/newsimg/booker.jpg";
+import image30 from "/newsimg/brittanygriner.jpg";
+import image31 from "/newsimg/alex paroeora.jpg";
+import image32 from "/newsimg/northernireland.jpg";
+import image33 from "/newsimg/Lewandowski_Barcelona_GFX.jpeg";
+import image34 from "/newsimg/Erling-Haaland.jpeg";
+
 export const Data = [
     {
         id: 0,
-        'img': "/newsimg/ronaldo.webp",
+        'img': ronaldo,
         'category': "popular",
         'sport': "Football",
         'date': '17 august,2023',
@@ -10,16 +46,16 @@ export const Data = [
     },
     {
         id: 1,
-        'img': "/newsimg/paolo banchero.jpg",
+        'img': image1,
         'category': "normal",
         'sport': "Basketball",
         'date': '27 july,2023',
-        'title': "Paolo Banchero out for rest of NBA 2K23 Summer League",
+        'title': " out for rest of NBA 2K23 Summer League",
         'news': "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet,comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
     },
     {
         id: 2,
-        'img': "/newsimg/northernireland.jpg",
+        'img': image2,
         'category': "normal",
         'sport': "Football",
         'date': "11 august,2023",
@@ -28,7 +64,7 @@ export const Data = [
     },
     {
         id: 3,
-        'img': "/newsimg/khabib.jpg",
+        'img': image3,
         'category': "popular",
         'sport': "UFC",
         'date': "10 august,2023",
@@ -37,7 +73,7 @@ export const Data = [
     },
     {
         id: 4,
-        'img': "/newsimg/rm.jpg",
+        'img': image4,
         'category': "popular",
         'sport': "Football",
         'date': "6 august,2023",
@@ -47,7 +83,7 @@ export const Data = [
     },
     {
         id: 5,
-        'img': "/newsimg/julianna pena.jpg",
+        'img': image5,
         'category': "normal",
         'sport': "UFC",
         'date': "2 august,2023",
@@ -56,7 +92,7 @@ export const Data = [
     },
     {
         id: 6,
-        'img': "/newsimg/jhonwalls.jpg",
+        'img': image6,
         'category': "popular",
         'sport': "Basketball",
         'date': '15 august,2023',
@@ -65,7 +101,7 @@ export const Data = [
     },
     {
         id: 7,
-        'img': "/newsimg/andreasperriera.jpg",
+        'img': image7,
         'category': "normal",
         'sport': "Football",
         'date': "22 july,2023",
@@ -74,7 +110,7 @@ export const Data = [
     },
     {
         id: 8,
-        'img': "/newsimg/rafael fiziev.jpg",
+        'img': image8,
         'category': "popular",
         'sport': "UFC",
         'date': "12 july,2023",
@@ -83,7 +119,7 @@ export const Data = [
     },
     {
         id: 9,
-        'img': "/newsimg/ellenwhite.jpg",
+        'img': image9,
         'category': "normal",
         'sport': "Football",
         'date': "11 july,2023",
@@ -92,7 +128,7 @@ export const Data = [
     },
     {
         id: 10,
-        'img': "/newsimg/tari.jpg",
+        'img': image10,
         'category': "normal",
         'sport': "Basketball",
         'date': "11 july,2023",
@@ -101,7 +137,7 @@ export const Data = [
     },
     {
         id: 11,
-        'img': "/newsimg/GVT.jpg",
+        'img': image11,
         'category': "popular",
         'sport': "Basketball",
         'date': "9 july,2023",
@@ -110,7 +146,7 @@ export const Data = [
     },
     {
         id: 12,
-        'img': "/newsimg/rafael dos.jpeg",
+        'img': image12,
         'category': "popular",
         'sport': "UFC",
         'date': "1 july,2023",
@@ -119,7 +155,7 @@ export const Data = [
     },
     {
         id: 13,
-        'img': "/newsimg/omarbayern.jpg",
+        'img': image13,
         'category': "normal",
         'sport': "Football",
         'date': "30 june,2023",
@@ -128,7 +164,7 @@ export const Data = [
     },
     {
         id: 14,
-        'img': "/newsimg/how_big_is_ufc_cage_f.jpg",
+        'img': image14,
         'category': "popular",
         'sport': "UFC",
         'date': "22 june,2023",
@@ -137,7 +173,7 @@ export const Data = [
     },
     {
         id: 15,
-        'img': "/newsimg/laliard.jpg",
+        'img': image15,
         'category': "normal",
         'sport': "Basketball",
         'date': "20 june,2023",
@@ -146,7 +182,7 @@ export const Data = [
     },
     {
         id: 16,
-        'img': "/newsimg/jalin turner.jpg",
+        'img': image16,
         'category': "normal",
         'sport': "UFC",
         'date': "17 june,2023",
@@ -155,7 +191,7 @@ export const Data = [
     },
     {
         id: 17,
-        'img': "/newsimg/shaedonsharpe.jpg",
+        'img': image17,
         'category': "normal",
         'sport': "Basketball",
         'date': "7 june,2023",
@@ -164,7 +200,7 @@ export const Data = [
     },
     {
         id: 18,
-        'img': "/newsimg/cvk.jpg",
+        'img': image18,
         'category': "normal",
         'sport': "UFC",
         'date': "30 may,2023",
@@ -173,7 +209,7 @@ export const Data = [
     },
     {
         id: 19,
-        'img': "/newsimg/kelseyploum.jpg",
+        'img': image19,
         'category': "popular",
         'sport': "Basketball",
         'date': "22 may,2023",
@@ -182,7 +218,7 @@ export const Data = [
     },
     {
         id: 20,
-        'img': "/newsimg/netherlandvandvnedall.jpg",
+        'img': image20,
         'category': "popular",
         'sport': "Football",
         'date': "20 may,2023",
@@ -191,7 +227,7 @@ export const Data = [
     },
     {
         id: 21,
-        'img': "/newsimg/rafael fiziev.jpg",
+        'img': image21,
         'category': "normal",
         'sport': "UFC",
         'date': "19 may,2023",
@@ -200,7 +236,7 @@ export const Data = [
     },
     {
         id: 22,
-        'img': "/newsimg/newscastle.jpg",
+        'img': image22,
         'category': "popular",
         'sport': "Football",
         'date': "22 april,2023",
@@ -209,7 +245,7 @@ export const Data = [
     },
     {
         id: 23,
-        'img': "/newsimg/englandeueo.jpg",
+        'img': image23,
         'category': "popular",
         'sport': "Football",
         'date': "17 april,2023",
@@ -218,7 +254,7 @@ export const Data = [
     },
     {
         id: 24,
-        'img': "/newsimg/quentin.jpg",
+        'img': image24,
         'category': "normal",
         'sport': "Basketball",
         'date': "2 april,2023",
@@ -227,7 +263,7 @@ export const Data = [
     },
     {
         id: 25,
-        'img': "/newsimg/Taj-Gibson-e1570840103825.jpg",
+        'img': image25,
         'category': "normal",
         'sport': "Basketball",
         'date': "30 march,2023",
@@ -236,7 +272,7 @@ export const Data = [
     },
     {
         id: 26,
-        'img': "/newsimg/englandwomen.jpg",
+        'img': image26,
         'category': "popular",
         'sport': "Football",
         'date': "15 march,2023",
@@ -245,7 +281,7 @@ export const Data = [
     },
     {
         id: 27,
-        'img': "/newsimg/Chris.jpg",
+        'img': image27,
         'category': "normal",
         'sport': "UFC",
         'date': "10 march,2023",
@@ -254,7 +290,7 @@ export const Data = [
     },
     {
         id: 28,
-        'img': "/newsimg/carla-esparza-2022.jpg",
+        'img': image28,
         'category': "normal",
         'sport': "UFC",
         'date': "1 march,2023",
@@ -263,7 +299,7 @@ export const Data = [
     },
     {
         id: 29,
-        'img': "/newsimg/booker.jpg",
+        'img': image29,
         'category': "popular",
         'sport': "Basketball",
         'date': "29 feb,2023",
@@ -272,7 +308,7 @@ export const Data = [
     },
     {
         id: 30,
-        'img': "/newsimg/brittanygriner.jpg",
+        'img': image30,
         'category': "normal",
         'sport': "Basketball",
         'date': "29 feb,2023",
@@ -281,7 +317,7 @@ export const Data = [
     },
     {
         id: 31,
-        'img': "/newsimg/alex paroeora.jpg",
+        'img': image31,
         'category': "normal",
         'sport': "UFC",
         'date': "27 feb,2023",
@@ -290,7 +326,7 @@ export const Data = [
     },
     {
         id: 32,
-        'img': "/newsimg/northernireland.jpg",
+        'img': image32,
         'category': "normal",
         'sport': "Football",
         'date': "11 august,2023",
@@ -299,7 +335,7 @@ export const Data = [
     },
     {
         id: 33,
-        'img': "/newsimg/Lewandowski_Barcelona_GFX.jpeg",
+        'img': image33,
         'category': "popular",
         'sport': "Football",
         'date': "15 august,2023",
@@ -308,7 +344,7 @@ export const Data = [
     },
     {
         id: 34,
-        'img': "/newsimg/Erling-Haaland.jpeg",
+        'img': image34,
         'category': "popular",
         'sport': "Football",
         'date': "11 august,2023",

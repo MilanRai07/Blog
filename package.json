@@ -1,6 +1,7 @@
 {
-  "homepage": "https://milanrai07.github.io/sportnewsblog",
+
   "name": "blog",
+  "homepage": "https://milanrai07.github.io/blog",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -59,11 +59,12 @@ export default {
         'fcDetail': '40rem'
       },
       boxShadow: {
-        'customShadow': '5px 5px 10px 5px #ccb3b3'
+        'customShadow': '5px 5px 10px 5px #ccb3b3',
+        'spinner':'2px 0 0 2px #0bf'
       },
       scale: {
         'customScale': '1.01'
-      }
+      },
     },
     screens: {
       '2xl': { 'max': '1535px' }, // => @media (max-width: 1535px) { ... }
